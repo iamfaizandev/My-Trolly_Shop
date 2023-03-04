@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.container-fluid {
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+.Nav_Bar {
+  background-color: yellowgreen;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  padding: 0.2rem;
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+nav ul {
+  list-style-type: none;
+  /* margin-bottom: 0; */
+}
+.nav_list li a {
+  text-decoration: none;
+  margin-right: 0.5rem;
+  color: rgb(255, 251, 251);
+}
+.right {
+  display: flex;
+  width: 30%;
+  height: 20%;
+}
+.right img {
+  width: 25%;
+  height: 17%;
+}
+.searh_bar {
+  width: 30%;
+  height: 10%;
+  margin-top: 1.1rem;
+  margin-left: 0.5rem;
+}
+.hidden {
+  display: none;
+}
+
+.right_btns {
+  display: none;
+}
+
+.left {
+  display: flex;
+}
+.light {
+  background-color: wheat;
+  color: black;
+}
+
+.about_shop {
+  padding: 0.5rem;
+  text-align: justify;
+}
+.card {
+  margin-right: 5rem;
+  margin-top: 5%;
+  height: 20%;
+  width: 30%;
+}
+.card img {
+  width: 80%;
+  height: 40%;
+}
+.card p {
+  color: black;
+}
+@media only screen and (max-width: 650px) {
+  .card {
+    display: none;
+  }
+  .nav_show {
+    display: none;
+  }
+
+  .nav_css-phone {
+    text-align: center;
+    left: 0px;
+    line-height: 3rem;
+    flex-direction: column;
+    font-weight: normal;
+    position: absolute;
+    margin-top: 19rem;
+    backdrop-filter: blur(13px);
+    background-color: #fffcfc29;
+    width: 100%;
+  }
+  .right {
+    display: flex;
+    width: 45%;
+    height: 30%;
+  }
+  .right img {
+    width: 45%;
+    height: 17%;
+  }
+  .search-item {
+    display: none;
+  }
+  .dark_mode-btn {
+    display: block;
+    justify-content: center;
+    right: 0.5rem;
+  }
+  .right_btns {
+    display: flex;
+  }
+}

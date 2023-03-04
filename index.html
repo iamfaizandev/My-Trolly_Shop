@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <nav class="Nav_Bar">
+            <div class="right">
+                <img src="src/assets/Logo.png" alt="" class="logo">
+                <div class=" ms-4 search_btn">
+                    <div class="search_icon mt-3 search-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <input type="search" name="search" class="searh_bar search-item hidden input-form w-50">
+                <input type="submit" name="submitbtn" class="submit_btn hidden searh_bar">
+            </div>
+            <ul class="nav_list nav_show ">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Sample</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#more">More</a></li>
+            </ul>
+            <div class="left">
+                <div class="dark_mode-btn">
+                    <div class="dark_mode hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" fill="currentColor"
+                            class="bi bi-moon-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                        </svg>
+                    </div>
+                    <div class="light_mode">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="25" fill="currentColor"
+                            class="bi bi-brightness-low-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="right_btns">
+                <div class="show_btn">
+                    <i class="bi bi-list"></i>
+                </div>
+                <div class="hide_btn hidden">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+            </div>
+        </nav>
+        <header id="home">
+            <div id="carousel_Controls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="src/assets/slide-1.jpg" class="d-block w-100" alt="slide-1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="src/assets/slide-1.jpg" class="d-block w-100" alt="slide-1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="src/assets/slide-1.jpg" class="d-block w-100" alt="slide-1">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel_Controls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel_Controls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </header>
+        <section id="about" class="about_shop">
+            <h1>About of Shop</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sequi similique doloribus inventore
+                voluptatibus aperiam excepturi placeat odio. Aliquam dicta sequi distinctio dolor temporibus tenetur
+                labore, eveniet esse beatae vel!
+                Distinctio facere molestiae atque consequuntur nemo similique incidunt perferendis eveniet ratione
+                mollitia modi maiores optio ipsa magni repellat dignissimos nihil voluptates possimus sunt dolor
+                excepturi, assumenda, obcaecati reprehenderit enim. Iste!
+                Quae consequatur autem officiis nam, saepe in a unde tempora incidunt deleniti eligendi eum labore ipsam
+                cum modi error architecto temporibus, velit iure facilis iste. Ullam neque nisi dicta voluptas.
+                Quasi excepturi aperiam provident culpa commodi assumenda reprehenderit iste et! Vel dolor dolorem
+                repellendus atque sunt consequuntur iste pariatur laboriosam doloribus ducimus velit corporis harum, ex
+                earum fuga accusantium ipsa!</p>
+        </section>
+        <section class="work d-flex " id="work">
+            <h1>Sample</h1>
+            <div class="card">
+                <img src="src/assets/cards.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="src/assets/cards.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="src/assets/cards.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="src/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
